@@ -6,7 +6,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
-## Code
+# Code
 ### NL
 Meeste code zit in de folders: app (Models), app/Http/Controllers (Controllers), resources/views (HTML), public/css (CSS) & vendor/devdojo/src (Forums).
 Er lijkt een spacing probleem te zijn op github met de code, geen idee wat dit veroorzaakt in mijn code editor ziet het er normaal en netjes uit, ik zal het proberen hier op github op te lossen door bij hand alles aan te passen.
