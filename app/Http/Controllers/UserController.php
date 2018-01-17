@@ -40,12 +40,12 @@ class UserController extends Controller
 
 	public function showProfile($id)
 	{
-			if (Auth::check()) 
+		if (Auth::check()) 
 		    {
-			    try
-			    {
-				    $user = User::findOrFail($id);
-				    $siteRole = Roles::findOrFail($user->siteRole);
+			try
+			 {
+		            $user = User::findOrFail($id);
+			    $siteRole = Roles::findOrFail($user->siteRole);
 	    		    $guildRank = Guildranks::findOrFail($user->guildRank);
 	    		    $profileInfo = Userprofiles::find($user->usersProfile);
 
@@ -58,16 +58,16 @@ class UserController extends Controller
 
 	    		    if($mainCharacter === NULL){
 	    		    	return view("profiles/profile", array('user' => $user, 'siteRole' => $siteRole, 
-													    		    		   'guildRank' => $guildRank, 
-													    		    		   'menuSiteRole' => $menuSiteRole, 
-													    		    		   'menuGuildRank' => $menuGuildRank, 
-													    		    		   'mainCharacter' => $mainCharacter, 
-													    		    		   'wowAPIArray' => NULL, 
-													    		    		   'characterRace' => NULL,
-													    		    	       'profileInfo' => $profileInfo, 
-													    		    	       'allCharacters' => NULL,
-													    		    	       'mainCharNotFound' => NULL, 
-													    		    	       'altsNameArray' => NULL));
+										       'guildRank' => $guildRank, 
+										       'menuSiteRole' => $menuSiteRole, 
+										       'menuGuildRank' => $menuGuildRank, 
+										       'mainCharacter' => $mainCharacter, 
+										       'wowAPIArray' => NULL, 
+										       'characterRace' => NULL,
+										       'profileInfo' => $profileInfo, 
+										       'allCharacters' => NULL,
+										       'mainCharNotFound' => NULL, 
+										       'altsNameArray' => NULL));
 	    		    }
 	    		    else
 	    		    {
@@ -76,7 +76,7 @@ class UserController extends Controller
 		    		    $mainCharacterName = $mainCharacter->charactername;
 
 		    		    try{
-			    		    $client = new \BlizzardApi\BlizzardClient('c7mebq5wx8gfmjge4y8bqjcekdbagqa4');
+			    		    $client = new \BlizzardApi\BlizzardClient('{Blizzard APIKEY}');
 					        $wow = new \BlizzardApi\Service\WorldOfWarcraft($client->setAccessToken('accessToken'));
 
 					        $response = $wow->getCharacter('silvermoon', 
@@ -130,7 +130,7 @@ class UserController extends Controller
 						    												   'menuGuildRank' => $menuGuildRank, 
 						    												   'mainCharacter' => $mainCharacter, 
 						    												   'wowAPIArray' => $responseArray,
-						    	    										   'characterRace' => $characterRace,
+						    	    										           'characterRace' => $characterRace,
 						    												   'profileInfo' => $profileInfo,
 						    												   'allCharacters' => $characters,
 						    												   'allCharAPIArray' => $tempAPIArray,
@@ -324,9 +324,9 @@ class UserController extends Controller
 				}
 
 			return view('profiles/edit/editprofilecharacters', array('user' => $user,
-																'mainCharacter' => $mainCharacter,
-																'altCharacters' => $altCharacters,
-																'altsNameArray' => $altsNameArray));
+										 'mainCharacter' => $mainCharacter,
+										 'altCharacters' => $altCharacters,
+										 'altsNameArray' => $altsNameArray));
 			}
 			else
 			{
@@ -339,11 +339,8 @@ class UserController extends Controller
 
 	/****
 	Als ingelogde user hetzelfde is als het meegegeve ID of als de ingelogde user siteRole heeft van 5 (GMC aka Guild Officers), 6 (Guild Master) of 7 (Admins).
-
 	De function krijgt de userID en mainCharacter id mee waarna $editingMain naar true word gezet en alle info van de mainCharacter word opgehaald
-
 	(Dit was een test om te kijken of het mogelijk was om mainCharacters en AltCharacters te kunnen edite met de zelfde view daar helpt $editingMain mee)
-
 	De edit pagina krijgt $editingMain en alle mainCharacter info mee.
 	****/
 	public function editMainCharacter($userID, $mainCharacterID){
@@ -363,11 +360,11 @@ class UserController extends Controller
 			$allRoles = Classroles::select('id', 'classRole')->get();
 
 			return view('profiles/edit/editcharacter', array('editingMain' => $editingMain,
-															 'user' => $user,
-															 'mainCharacter' => $mainCharacter,
-															 'allClasses' => $allClasses,
-															 'allSpecs' => $allSpecs,
-															 'allRoles' => $allRoles));
+									 'user' => $user,
+									 'mainCharacter' => $mainCharacter,
+									 'allClasses' => $allClasses,
+									 'allSpecs' => $allSpecs,
+									 'allRoles' => $allRoles));
 
 			}else{
 				return redirect('/home');
@@ -394,9 +391,9 @@ class UserController extends Controller
 	            'role' => 'required'
 	            ]);
 
-			$mainCharacterID = $request->mainCharacterID;
+		$mainCharacterID = $request->mainCharacterID;
 
-		    $mainToUpdate = Maincharacters::find($mainCharacterID);
+		$mainToUpdate = Maincharacters::find($mainCharacterID);
 
 	    	$mainToUpdate->charactername = $request->charactername;
 	    	$mainToUpdate->armoryLink = $request->armoryLink;
@@ -433,9 +430,9 @@ class UserController extends Controller
 		$allRoles = Classroles::select('id', 'classRole')->get();
 
 		return view('profiles/edit/addcharacter', array('user' => $user,
-														 'allClasses' => $allClasses,
-														 'allSpecs' => $allSpecs,
-														 'allRoles' => $allRoles));
+							        'allClasses' => $allClasses,
+							        'allSpecs' => $allSpecs,
+							        'allRoles' => $allRoles));
 		}else{
 			return redirect('/home');
 		}
@@ -501,11 +498,11 @@ class UserController extends Controller
 			$allRoles = Classroles::select('id', 'classRole')->get();
 
 			return view('profiles/edit/editcharacter', array('editingMain' => $editingMain,
-														 	 'user' => $user,
-														 	 'altCharacter' => $altCharacter,
-														 	 'allClasses' => $allClasses,
-															 'allSpecs' => $allSpecs,
-															 'allRoles' => $allRoles));
+									 'user' => $user,
+									 'altCharacter' => $altCharacter,
+									 'allClasses' => $allClasses,
+									 'allSpecs' => $allSpecs,
+									 'allRoles' => $allRoles));
 		}else{
 			return redirect('/home');
 		}
