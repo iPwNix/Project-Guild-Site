@@ -15,7 +15,7 @@ Er lijkt een spacing probleem te zijn op github met de code, geen idee wat dit v
 Most code resides within the folders: app (Models), app/Http/Controllers (Controllers), resources/views (HTML), public/css (CSS) & vendor/devdojo/src (Forums).
 There seems to be a spacing problem with the code here on github, i have no idea whats causing this because in my code editor everything seems clean anr normal, i'll try and fix it by hand here on github.
 
-#Beschrijving / Description
+# Beschrijving / Description
 
 ### NL
 Een school en tegelijk een persoonlijk project, voor een vriend die een guild website wou hebben voor zijn World of Warcraft guild.
