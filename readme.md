@@ -6,22 +6,13 @@
 [![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+# NL
+Een school en tegelijk een persoonlijk project, voor een vriend die een guild website wou hebben voor zijn World of Warcraft guild.
+Een nieuwe member kan een application plaatsen en de admins kunnen dan kiezen of hij geaccept word en bij de site kan of niet, er kunnen articles geplaats worden met fotos, de gebruikers kunnen hun eigen profiel maken en aanpassen met avatars, een cover foto en hun eigen characters van de server "Silvermoon" linken en weergeven op hun profiel pagina met behulp van de Blizzard API.
+Er is ook een Forum met behulp van de Chatter plugin, die ik zelf wel aangepast heb met access restrictions zodat niet iedereen alles kan. 
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
-
-## Official Documentation
-
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+# ENG
+A School and at the same time a personal project of mine, for a friend who wanted his own guild website for his World of Warcraft guild.
+A new member can post an application and admins kan decide if they want to accept or decline his application and his access to the site.
+Admin can post news articles with photos and users kan create and customize their own profile with a avatar, a coverphoto and they can link and display all their character from the server "Silvermoon" on their profile with help of the Blizzard API.
+There is also a forum with help of the Chatter plugin, that i modified with some access restrictions so normal members cant do admin stuff.
