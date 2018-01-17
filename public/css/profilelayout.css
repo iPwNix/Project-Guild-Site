@@ -1,0 +1,281 @@
+@font-face {
+  font-family: 'KingslandRegular';
+  src: url('fonts/KingslandRegular.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media (max-width: 295px) {
+	.allCharacters-div{
+	display: none !important;
+	}
+}
+
+.thumbnail{
+	border-color: rgba(0, 128, 128, 0.3) !important;
+	background-color: rgba(0, 128, 128, 0.3);
+}
+section.hero .profile-avatar .thumbnail {
+    padding: 10px !important;
+}
+
+.profile-sep-bar{
+	background: transparent !important;
+	border-top: 3px solid rgba(0, 128, 128, 0.3) !important;
+	-webkit-border-top: 3px solid rgba(0, 128, 128, 0.3) !important;
+}
+.profile-info-col{
+}
+.widget-prof-info{
+	background: rgba(0, 128, 128, 0.5) !important;
+}
+.widget-prof-info-panel{
+	background: transparent !important;
+	border-color: #7fbfbf !important;
+}
+.widget-prof-info-heading{
+	background: #7fbfbf !important;
+}
+.panel-profileinfo{
+	color: #f6f5fb !important;
+}
+@media (max-width: 767px) {
+	.profile-sep-bar{
+		height: 1px !important;
+	}
+	.profile-info-col{
+		margin-bottom: 50px;
+	}
+}
+
+.char-profileTitle{
+	font-family: KingslandRegular !important;
+	overflow-wrap: break-word;
+}
+.charPost{
+	width: 100%;
+	height: 300px;
+	padding: 0px !important;
+}
+.prof-data{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.prof-classBanner{
+position: relative;
+width: 15%;
+min-width: 50px;
+height: 100%;
+/*background: rgba(255, 0, 0, 0.3);*/
+/*background-color: red;*/
+display: inline-block;
+background-repeat: no-repeat;
+background-position: center; 
+}
+.prof-charAvatar{
+position: relative;
+width: 35%;
+height: 100%;
+background: rgba(29, 30, 55, 0.3);
+/*background-color: blue;*/
+/*display: inline-block;*/
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.prof-char-avatar{
+	height: 150px;
+	width: 150px;
+border-radius: 50%;
+vertical-align: middle;
+}
+
+.prof-charInfo{
+position: relative;
+width: 35%;
+height: 100%;
+background: rgba(29, 30, 55, 0.3);
+/*background-color: green;*/
+display: inline-block;
+text-align: center;
+font-family: KingslandRegular;
+font-size: 20px;
+font-weight: 700 !important;
+line-height: 60px;
+padding-top: 25px;
+}
+.prof-charRole{
+position: relative;
+width: 15%;
+min-width: 50px;
+height: 100%;
+/*background: rgba(255, 0, 255, 0.3);*/
+/*background-color: purple;*/
+/****background-color: green;****/
+display: inline-block;
+}
+
+.mainCharacterDiv{
+height: 100% !important;
+
+/*-o-border-image-slice: 33 33 33 33;
+-o-border-image-width: 30px 30px 30px 30px;
+-o-border-image-outset: 24px 24px 24px 25px;
+-o-border-image-repeat: stretch stretch;
+-o-border-image-source: url(../images/Border3.png);
+
+-webkit-border-image-slice: 33 33 33 33;
+-webkit-border-image-width: 30px 30px 30px 30px;
+-webkit-border-image-outset: 24px 24px 24px 25px;
+-webkit-border-image-repeat: stretch stretch;
+-webkit-border-image-source: url(../images/Border3.png);
+
+border-image-slice: 33 33 33 33;
+border-image-width: 30px 30px 30px 30px;
+border-image-outset: 24px 24px 24px 25px;
+border-image-repeat: stretch stretch;
+border-image-source: url(../images/Border3.png);*/
+border: 33px solid transparent;
+-webkit-border-image: url(../images/Border3.png) 22 stretch;
+-o-border-image: url(../images/Border3.png) 22 stretch;
+border-image: url(../images/Border3.png) 22 stretch;
+}
+.panel-character{
+margin-bottom: 0px !important;
+border: none !important;
+}
+.characterMasterDiv{
+margin-bottom: 40px !important;	
+}
+
+.charHeaderBorder{
+	width: 100%;
+	height: 20px;
+	display:block;
+ 	position:relative;
+ 	background: url(../images/HoriStraightBorder.png);
+}
+.prof-charAvatarBorderLeft,
+.prof-charAvatarBorderRight,
+.prof-charInfoBorderRight
+{
+		width: 20px;
+		height: 100%;
+		display: block;
+		position: absolute;
+		background: url(../images/VertiStraightBorder.png);
+		top: 0;
+}
+.prof-charAvatarBorderLeft{
+left: 0;
+}
+.prof-charAvatarBorderRight,
+.prof-charInfoBorderRight{
+right: 0;
+}
+
+.panel-altsTitleDiv{
+border-image-slice: 33 33 33 33;
+border-image-width: 30px 30px 30px 30px;
+border-image-outset: 24px 24px 24px 25px;
+border-image-repeat: stretch stretch;
+border-image-source: url(../images/Border3.png);
+}
+
+
+.prof-data-sm{
+height: 300px;
+}
+.prof-char-data-sm{
+height: 150px;
+}
+.prof-charAvatar-sm{
+position: relative;
+height: 100%;
+width: 50%;
+left: 0;
+padding-left: 16px;
+background: rgba(29, 30, 55, 0.3);
+/*background-color: blue;*/
+/*display: inline-block;*/
+display: flex;
+justify-content: center;
+align-items: center;
+float: left;
+}
+
+.prof-char-avatar-sm{
+height: 100px;
+width: 100px;
+border-radius: 50%;
+vertical-align: middle;
+}
+
+.prof-charInfo-sm{
+position: relative;
+background: rgba(29, 30, 55, 0.3);
+text-align: center;
+height: 100%;
+width: 50%;
+display: inline-block;
+float: right;
+font-family: KingslandRegular;
+line-height: 35px;
+font-weight: bold;
+}
+
+.prof-char-banners-sm{
+height: 150px;
+width: 100%;
+}
+
+.prof-charRoleBanner-sm{
+height: 50%;
+width: 100%;
+background-position: center;
+}
+.prof-classBanner-sm{
+height: 50%;
+width: 100%;
+background-position: center;
+}
+
+.thinHoriSep{
+	width: 100%;
+	height: 10px;
+	float: right;
+	background: url(../images/HoriStraightBorderThin.png);
+}
+
+.thinVertiSep{
+	width: 10px;
+	height: 100%;
+	float: left;
+	background: url(../images/VeriStraightBorderThin.png);
+}
+
+.btn-editProf{
+	text-align: center;
+	color: #41b5ea !important;
+	-webkit-text-stroke: 1px #1c7fb6;
+	text-shadow: 2px 2px 0 #1c7fb6, -1px -1px 0 #1c7fb6, 1px -1px 0 #1c7fb6, -1px 1px 0 #1c7fb6, 1px 1px 0 #1c7fb6;
+	background: rgba(0, 128, 128, 0.3) !important;
+	border: 2px solid #008080 !important;
+	-webkit-transition: background 0.5s, color 0.5s ease-in;
+	transition: background 0.5s, color 0.5s ease-in;
+}
+
+.btn-editProf:hover,
+.btn-editProf:active{
+  background: rgba(0, 128, 128, 1) !important;
+  -webkit-transition: background 0.5s, color 0.5s ease-in;
+  transition: background 0.5s, color 0.5s ease-in;
+}
+
+.circle-btn-fa-heading{
+	margin-top: 5px !important;
+}
+.circle-btn-fa-widget {
+    margin-top: 6px !important;
+}

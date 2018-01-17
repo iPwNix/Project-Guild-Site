@@ -1,0 +1,274 @@
+@font-face {
+  font-family: 'BatmanFaRegular';
+  src: url('fonts/batmfa.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KingslandRegular';
+  src: url('fonts/KingslandRegular.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#wrap {
+    width: 100%;
+    /*height: 100%;*/
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: block;
+    /*overflow: hidden;*/
+}
+
+html, body {
+    height: 100%;
+    /*font-family: KingslandRegular !important;*/
+    background-image: url(../images/BlankBack.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fill { 
+    min-height: 100%;
+    height: 100%;
+    min-width: 100%;
+    width: 100%;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.row-pre-rules-title{
+  height: 200px;
+  max-height: 200px;
+}
+.col-pre-rules-title{
+  height: 200px;
+  max-height: 200px;
+}
+.pre-rules-row{
+  font-family: KingslandRegular !important;
+}
+
+.rules-title-bk{
+  position: absolute;
+  height: 150px;
+  width: 100%;
+  max-width: 960px;
+  background-image: url(../images/Banners/beforeApply/Slideinbk.png);
+  background-position: right center;
+  background-size: cover;
+  left: -960px;
+  -webkit-transition: left 2s;
+  transition: left 2s; 
+}
+.rules-title-bk h1 {
+  font-family: BatmanFaRegular !important;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 125px;
+  color: #41b5ea;
+  font-size: 50px;
+  -webkit-text-stroke: 1px #1c7fb6;
+  text-shadow:
+       3px 3px 0 #1c7fb6,
+     -1px -1px 0 #1c7fb6,  
+      1px -1px 0 #1c7fb6,
+      -1px 1px 0 #1c7fb6,
+       1px 1px 0 #1c7fb6;
+}
+
+.pre-rules-panel{
+  background: rgba(0, 0, 0, 0.9) !important;
+  overflow: hidden;
+  border-image-slice: 33 33 33 33;
+border-image-width: 30px 30px 30px 30px;
+border-image-outset: 24px 24px 24px 25px;
+border-image-repeat: stretch stretch;
+border-image-source: url(../images/Border3.png);
+   margin-bottom: 25px;
+}
+.pre-rules-panelbody{
+
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
+
+.paraf-title{
+text-align: center;
+margin-bottom: 15px;
+margin-top: 15px;
+}
+.paraf-title-first{
+margin-top: 0px !important;
+}
+.paraf-title h2{
+/*  font-family: KingslandRegular !important;
+  font-weight: bolder;*/
+    font-family: BatmanFaRegular !important;
+  text-align: center;
+  color: #41b5ea;
+  font-size: 50px;
+  -webkit-text-stroke: 1px #1c7fb6;
+  text-shadow:
+       3px 3px 0 #1c7fb6,
+     -1px -1px 0 #1c7fb6,  
+      1px -1px 0 #1c7fb6,
+      -1px 1px 0 #1c7fb6,
+       1px 1px 0 #1c7fb6;
+}
+.paraf-text{
+  font-size: 15px;
+}
+
+
+.first-text,
+.second-text,
+.third-text,
+.forth-text{
+  font-family: KingslandRegular !important;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+ul{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  list-style: none
+}
+
+
+
+.progress-row{
+  height: 150px;
+  min-height: 150px;
+  width: 100%;
+}
+.progress-title{
+  height: 25%;
+}
+
+.progress-col-1,
+.progress-col-2,
+.progress-col-3{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.progress-title{
+font-family: BatmanFaRegular !important;
+text-align: center;
+color: #41b5ea;
+font-size: 25px;
+-webkit-text-stroke: 1px #1c7fb6;
+text-shadow: 1px 1px 0 #1c7fb6,
+ -1px -1px 0 #1c7fb6,
+ 1px -1px 0 #1c7fb6,
+  -1px 1px 0 #1c7fb6,
+ 1px 1px 0 #1c7fb6;
+}
+.progress-col-1{
+background-image: url('../images/Banners/about/EmeraldNightmareBanner1080.jpg');
+background-position: right;
+background-size: cover;
+}
+.progress-col-2{
+background-image: url('../images/Banners/about/TrialofValorBanner1080.jpg');
+background-position: right;
+background-size: cover;
+}
+.progress-col-3{
+background-image: url('../images/Banners/about/NightholdBanner1080.jpg');
+background-position: center;
+background-size: cover;
+}
+.progress-col-1-nm,
+.progress-col-2-nm,
+.progress-col-3-nm,
+.progress-col-1-hc,
+.progress-col-2-hc,
+.progress-col-3-hc,
+.progress-col-1-myth,
+.progress-col-2-myth,
+.progress-col-3-myth{
+  width: 10%;
+  min-width: 100px;
+  height: 25%;
+  padding: 5px;
+
+font-family: KingslandRegular !important;
+text-align: center;
+color: #41b5ea;
+font-size: 20px;
+-webkit-text-stroke: 1px #1c7fb6;
+text-shadow: 1px 1px 0 #1c7fb6, -1px -1px 0 #1c7fb6, 1px -1px 0 #1c7fb6, -1px 1px 0 #1c7fb6, 1px 1px 0 #1c7fb6;
+
+  -webkit-transition: width 4s ease-in;
+  transition: width 4s;
+}
+
+.progress-col-1-nm,
+.progress-col-2-nm,
+.progress-col-3-nm{
+background: rgba(5, 121, 181, 0.5);
+}
+.progress-col-1-hc,
+.progress-col-2-hc,
+.progress-col-3-hc{
+background: rgba(235, 88, 36, 0.5);
+}
+.progress-col-1-myth,
+.progress-col-2-myth,
+.progress-col-3-myth{
+background: rgba(235, 0, 0, 0.5);
+}
+
+
+@media (max-width: 635px){
+.paraf-title h2{
+  font-family: BatmanFaRegular !important;
+  text-align: center;
+  color: #41b5ea;
+  font-size: 20px;
+  -webkit-text-stroke: 1px #1c7fb6;
+  text-shadow:
+       1px 1px 0 #1c7fb6,
+     -1px -1px 0 #1c7fb6,  
+      1px -1px 0 #1c7fb6,
+      -1px 1px 0 #1c7fb6,
+       1px 1px 0 #1c7fb6;
+}
+}
+
+@media (max-width: 440px){
+  .progress-title{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px){
+  .rules-title-bk h1{
+    font-size: 25px;
+  }
+}
+
+.banned-col{
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+.bannedImgDiv{
+  width: 100%;
+}
+.bannedImg{
+  width: 100%;
+}

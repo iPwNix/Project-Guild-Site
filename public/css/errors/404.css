@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'BatmanFaRegular';
+  src: url('../fonts/batmfa.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,html
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+  /*** STUFF ***/
+	background-image: url('/images/errors/404/404.png');
+	background-position: center; 
+}
+
+.container{
+    bottom: 0;
+    height: 100px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+}
+
+.returnCountdown
+{
+  font-family: BatmanFaRegular !important;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  color: #765898;
+  font-size: 50px;
+  -webkit-text-stroke: 1px #e6770b;
+  text-shadow:
+       3px 3px 0 #e6770b,
+     -1px -1px 0 #e6770b,  
+      1px -1px 0 #e6770b,
+      -1px 1px 0 #e6770b,
+       1px 1px 0 #e6770b;
+}

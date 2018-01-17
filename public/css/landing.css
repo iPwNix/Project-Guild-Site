@@ -1,0 +1,272 @@
+@font-face {
+  font-family: 'KingslandRegular';
+  src: url('fonts/KingslandRegular.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BatmanFaRegular';
+  src: url('fonts/batmfa.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background: black;
+    display: block;
+    /*overflow: hidden;*/
+}
+
+html, body {
+    height: 100%;
+}
+
+.fill { 
+    min-height: 100%;
+    height: 100%;
+    min-width: 100%;
+    width: 100%;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.headBanner{
+	position: absolute;
+	height: 10%;
+	min-height: 150px;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	z-index: 10;
+}
+.headBanner img{
+	max-width: 100%;
+	height: 150px;
+}
+.headerBackground{
+	width: auto;
+	min-height: 150px;
+	background-image: url(../img/blog/lg/TopHeadborder.png);
+	background-position: center;
+	background-size: cover;
+}
+
+.leftBanLogo,
+.midBanLogo,
+.rightBanLogo{
+	min-height: 100%;
+}
+
+.leftBanLogo img,
+.rightBanLogo img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.leftBanLogo img{
+	float: left;
+}
+.rightBanLogo img{
+	float: right;
+}
+.aegisName{
+	min-width: 500px; 
+}
+.XSMidLogo{
+	display: none;
+}
+@media (max-width: 993px){
+	.leftBanLogo{
+		display: none;
+	}
+}
+@media (max-width: 991px) {
+.midBanLogo{
+	width: 100%;
+	text-align: center;
+}
+.applySlide{
+	height: 45% !important;
+}
+}
+
+@media (max-width: 767px) {
+/*.applySlide{
+margin-top:15%;
+	}*/
+.applySlide,
+.LoginSlide{
+height: 45% !important;
+}
+
+}
+
+@media (max-width: 530px){
+	.aegisName{
+display: none;
+	}
+	.XSMidLogo{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+	}
+}
+
+
+.carouselOverlay{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	/*min-height: 820px;*/
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 1;
+}
+.carouLink{
+	width: 100%;
+	height: 100%;
+}
+
+.centerCaptionText{
+	align-self: center;
+	text-align: center;
+}
+.captionHead{
+	font-size: 50px !important;
+}
+.sideCaptionTxt{
+	font-size: 35px !important;
+}
+
+.centerCaptionText > h2{
+	font-family: KingslandRegular !important;
+	color: black !important;
+	font-size: 50px;
+	font-weight: bolder;
+  	text-shadow:
+   -2px -2px 0 #f6f5fb,  
+    2px -2px 0 #f6f5fb,
+    -2px 2px 0 #f6f5fb,
+     2px 2px 0 #f6f5fb;
+}
+
+.applySlide,
+.LoginSlide,
+.rightSlides{
+height: 100%;
+min-height: 400px;
+/*height: 90%;*/
+}
+.aboutSlide{
+
+}
+.fullcarou{
+	height: 100%;
+/*	min-height: 820px;*/
+}
+.halfcarou{
+	height: 50%;
+}
+.carousel-inner{
+	height: 100%;
+}
+.item{
+	height: 100%;
+}
+.item > img{
+	height: 100% !important;
+	width: 100% !important;
+}
+
+.applyImgOne,
+.applyImgTwo,
+.applyImgThree{
+	height: 100% !important;
+	width: 100% !important;
+}
+
+.applyImgOne{
+	background-image: url(../images/landingPage/applySlide/101.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.applyImgTwo{
+	background-image: url(../images/landingPage/applySlide/102.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.applyImgThree{
+	background-image: url(../images/landingPage/applySlide/103.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.loginImgOne,
+.loginImgTwo,
+.loginImgThree{
+	height: 100% !important;
+	width: 100% !important;
+}
+.loginImgOne{
+	background-image: url(../images/landingPage/loginSlide/201.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.loginImgTwo{
+	background-image: url(../images/landingPage/loginSlide/202.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.loginImgThree{
+	background-image: url(../images/landingPage/loginSlide/203.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+
+.aboutImgOne,
+.aboutImgTwo,
+.aboutImgThree{
+	height: 100% !important;
+	width: 100% !important;
+}
+.aboutImgOne{
+	background-image: url(../images/landingPage/aboutSlide/301.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.aboutImgTwo{
+	background-image: url(../images/landingPage/aboutSlide/302.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.aboutImgThree{
+	background-image: url(../images/landingPage/aboutSlide/303.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.rulesImgOne,
+.rulesImgTwo,
+.rulesImgThree{
+	height: 100% !important;
+	width: 100% !important;
+}
+.rulesImgOne{
+	background-image: url(../images/landingPage/rulesSlide/401.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.rulesImgTwo{
+	background-image: url(../images/landingPage/rulesSlide/402.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.rulesImgThree{
+	background-image: url(../images/landingPage/rulesSlide/403.jpg);
+	background-position: center;
+	background-size: cover;
+}
