@@ -191,19 +191,12 @@ class ChatterPostController extends Controller
             return redirect('/' . config('chatter.routes.home'))->with($chatter_alert);
             }else{
 
-                //echo "DELETING RESPONSE ID: ".$post->id."<br>";
-                //echo "DELETING FOR THREADID: ".$thread->id."<br>";
                 $count_post = Post::where('chatter_discussion_id',$post->chatter_discussion_id)->count();
 
-                //echo "POSTCOUNT: ".$count_post."<br>";
-
                 $originalPost = Post::where('chatter_discussion_id',$post->chatter_discussion_id)->first();
-                //echo "ORIGINAL POSTID: ".$originalPost->id."<br>";
-                //echo "ORIGINAL POSTTHREADID: ".$originalPost->chatter_discussion_id."<br>";
 
                 if($count_post <= 1 || $originalPost->id == $id){
                     $thread = Discussion::find($post->chatter_discussion_id);
-                    //echo $thread->title."<br>";
 
                     $allReplies = Post::where('chatter_discussion_id',$thread->id)->get();
 
